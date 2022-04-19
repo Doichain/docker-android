@@ -6,6 +6,7 @@ ENV ANT_OPTS="-Xmx4096m"
 RUN apt update  && apt install  -y --no-install-recommends \
     ant \
     git \
+    vim \
     openjdk-11-jdk-headless \
     python-setuptools \
     python3-setuptools
@@ -26,7 +27,7 @@ ARG SDK_VERSION=commandlinetools-linux-7302050_latest.zip
 ARG ANDROID_BUILD_VERSION=31
 ARG ANDROID_TOOLS_VERSION=31.0.0
 ARG NDK_VERSION=21.4.7075529
-ARG NODE_VERSION=14.x
+ARG NODE_VERSION=16.x
 ARG WATCHMAN_VERSION=4.9.0
 ARG CMAKE_VERSION=3.18.1
 
